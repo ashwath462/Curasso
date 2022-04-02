@@ -9,6 +9,7 @@ const Pricing = React.lazy(() => import('../../components/Pricing/pricing'));
 const Counter = React.lazy(() => import('../../components/Counter/counter'));
 const Contact = React.lazy(() => import('../../components/Contact/contact'));
 const Footer = React.lazy(() => import('../../components/Footer/footer'));
+const About = React.lazy(() => import('../../components/aboutus'));
 
 class Index1 extends Component {
     constructor(props) {
@@ -19,8 +20,8 @@ class Index1 extends Component {
                 { id: 2 , idnm : "features", navheading: "Features" },
                 { id: 3 , idnm : "services", navheading: "Services" },
                 { id: 4 , idnm : "team", navheading: "Team" },
-                { id: 5 , idnm : "pricing", navheading: "Pricing" },
-                { id: 6 , idnm : "contact", navheading: "Contact" },
+                // { id: 5 , idnm : "pricing", navheading: "Pricing" },
+                { id: 5 , idnm : "contact", navheading: "Contact" },
             ],
             pos : document.documentElement.scrollTop,
             imglight : true,
@@ -69,6 +70,12 @@ class Index1 extends Component {
                     {/* Importing section */}
                     <Section/>
 
+                    {/* Importing Aboutus */}
+                    <About/>
+
+                    {/* Importing counter */}
+                    <Counter/>
+
                     {/* Importing features */}
                     <Features isBgWhite={true}/>
 
@@ -82,10 +89,7 @@ class Index1 extends Component {
                     <OurTeam/>
 
                     {/* Importing pricing */}
-                    <Pricing/>
-
-                    {/* Importing counter */}
-                    <Counter/>
+                    {/* <Pricing/> */}
 
                     {/* Importing contact */}
                     <Contact/>

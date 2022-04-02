@@ -18,7 +18,7 @@ class TeamBox extends Component {
                             {
                                 member.socials.map((social, key) =>
                                 <li key={key} className="list-inline-item">
-                                    <Link to={social.link} className={social.class + " mr-1"}><i className={social.icon}></i></Link>
+                                    <a href={social.link} target={'_blank'} className={social.class + " mr-1"}><i className={social.icon}></i></a>
                                 </li>
                                 )
                             }

@@ -61,22 +61,22 @@ class GetInTouch extends Component {
             <Row className="contact-footer">
               <Col sm="4">
                 <div className="contact-footer-box text-center">
-                  <i className="ti-mobile"></i>
-                  <h5>123-456-789-0</h5>
+                <a href="tel:+918290037627" target="blank"><i className="ti-mobile"></i>
+                  <h5>+91 82900 37627</h5></a>
                 </div>
               </Col>
 
               <Col sm="4">
                 <div className="contact-footer-box text-center">
-                  <i className="ti-map-alt"></i>
-                  <h5>New York City, USA</h5>
+                <a href="" target="blank"><i className="ti-map-alt"></i>
+                  <h5>Indore, India</h5></a>
                 </div>
               </Col>
 
               <Col sm="4">
                 <div className="contact-footer-box text-center">
-                  <i className="ti-email"></i>
-                  <h5>emailaddress@domain.com</h5>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=gouravthandhani20@gmail.com" target="blank"><i className="ti-email"></i>
+                  <h5>hello@minimalholic.in</h5></a>
                 </div>
               </Col>
             </Row>

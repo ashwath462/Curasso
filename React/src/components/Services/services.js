@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import { Container, Row } from "reactstrap";
 
 //Import Section Title
@@ -7,7 +7,7 @@ import SectionTitle from "../common/section-title";
 //Import Service Box
 import ServiceBox from "./service-box";
 
-class Services extends Component {
+export default class Services extends Component {
     state = {
         services1 : [
            { title : "Creative Content", icon : "ti-ruler-pencil", desc : "Content is the King of Marketing and Creating the perfect Content Strategy for your Brand requires a team of experts who can give a professional look to your brand. We have crafted Content for over 10+ Brands with our personal touch of Creativity helping them boost their business growth." },
@@ -51,5 +51,3 @@ class Services extends Component {
         );
     }
 }
-
-export default Services;

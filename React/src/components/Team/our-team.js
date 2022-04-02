@@ -8,50 +8,91 @@ import SectionTitle from "../../components/common/section-title";
 import TeamBox from "./team-box";
 
 //Import Images
-import team1 from "../../assets/images/team/team1.jpg";
-import team2 from "../../assets/images/team/team2.jpg";
-import team3 from "../../assets/images/team/team3.jpg";
-
+import team1 from "../../assets/images/team/gouravsir.jfif";
+import team2 from "../../assets/images/team/ps.jfif";
+import team3 from "../../assets/images/team/akashsir.jfif";
+import team4 from "../../assets/images/team/rehan.jfif";
+import team5 from "../../assets/images/team/team3.jpg";
+import team6 from "../../assets/images/team/team3.jpg";
 class OurTeam extends Component {
   state = {
     members: [
       {
         id: 1,
-        name: "Andrew Sparks",
+        name: "Gourav Thadhani",
         image: team1,
-        post: "CEO/Founder",
-        desc:
-          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        post: "Co-founder",
+        // desc:
+          // "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
         socials: [
-          { class: "bg-twitter", icon: "ti-twitter-alt", link: "#" },
-          { class: "bg-dribbble", icon: "ti-dribbble", link: "#" },
-          { class: "bg-linkedin", icon: "ti-linkedin", link: "#" },
+          { class: "bg-googleplus", icon: "ti-email", link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=gouravthadhani20@gmail.com" },
+          { class: "bg-dribbble", icon: "ti-instagram", link: "https://www.instagram.com/gourav_thadhani/" },
+          { class: "bg-linkedin", icon: "ti-linkedin", link: "https://www.linkedin.com/in/gourav-thadhani-72a6ba115/" },
         ],
       },
       {
         id: 2,
-        name: "Hubert Brandt",
+        name: "Pranjal Sahu",
         image: team2,
-        post: "CTO/Co-Founder",
-        desc:
-          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        post: "Co-Founder",
+        // desc:
+          // "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
         socials: [
-          { class: "bg-googleplus", icon: "ti-google", link: "#" },
-          { class: "bg-facebook", icon: "ti-facebook", link: "#" },
-          { class: "bg-linkedin", icon: "ti-linkedin", link: "#" },
+          { class: "bg-googleplus", icon: "ti-email", link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pranjalsahu2603@gmail.com" },
+          { class: "bg-dribbble", icon: "ti-instagram", link: "https://www.instagram.com/_apostrophe_s/" },
+          { class: "bg-linkedin", icon: "ti-linkedin", link: "https://www.linkedin.com/in/pranjal-sahu-8a70641b0/" },
         ],
       },
       {
         id: 3,
-        name: "David Downs",
+        name: "Akash Chakrwarti",
         image: team3,
-        post: "Web Designer",
-        desc:
-          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        post: "Co-founder",
+        // desc:
+          // "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
         socials: [
-          { class: "bg-twitter", icon: "ti-twitter-alt", link: "#" },
-          { class: "bg-dribbble", icon: "ti-dribbble", link: "#" },
+          { class: "bg-googleplus", icon: "ti-email", link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akashchakrawarti2000@gmail.com" },
+          { class: "bg-dribbble", icon: "ti-instagram", link: "https://www.instagram.com/ashhuu._/" },
           { class: "bg-linkedin", icon: "ti-linkedin", link: "#" },
+        ],
+      },
+      {
+        id: 4,
+        name: "Rehan Mansoori",
+        image: team4,
+        post: "Marketing & Sales Executive",
+        // desc:
+          // "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        socials: [
+          { class: "bg-googleplus", icon: "ti-email", link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rhnrehan31@gmail.com" },
+          { class: "bg-dribbble", icon: "ti-instagram", link: "https://www.instagram.com/saving_priv_rehan/" },
+          { class: "bg-linkedin", icon: "ti-linkedin", link: "https://www.linkedin.com/in/rehanmansoori/" },
+        ],
+      },
+      {
+        id: 5,
+        name: "Mohit Soneja",
+        image: team5,
+        post: "Creative Director",
+        // desc:
+          // "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        socials: [
+          { class: "bg-googleplus", icon: "ti-email", link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mohit98775@gmail.com" },
+          { class: "bg-dribbble", icon: "ti-instagram", link: "https://www.instagram.com/mohitsoneja_/" },
+          { class: "bg-linkedin", icon: "ti-linkedin", link: "https://www.linkedin.com/in/mohit-soneja/" },
+        ],
+      },
+      {
+        id: 6,
+        name: "Ashwath Arora",
+        image: team6,
+        post: "Technical Executiver",
+        // desc:
+          // "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+        socials: [
+          { class: "bg-googleplus", icon: "ti-email", link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ashwatharora462@gmail.com" },
+          { class: "bg-dribbble", icon: "ti-instagram", link: "https://www.instagram.com/ashwath.arora" },
+          { class: "bg-linkedin", icon: "ti-linkedin", link: "https://www.linkedin.com/in/ashwath-arora-a14aa1222/" },
         ],
       },
     ],
