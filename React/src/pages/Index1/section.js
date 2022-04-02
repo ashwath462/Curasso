@@ -55,10 +55,9 @@ class Section extends Component {
                                     <div className="home-wrapper home-wrapper-alt">
                                         <Row>
                                             <Col md="6">
-                                                <h1><span className="font-2">Clean & Professional,</span><br/> Multipurpose Landing Page</h1>
-                                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</h4>
-                                                <Link to="" className="btn btn-custom">Learn more</Link>
-                                                <Link onClick={this.callModal} to="#" className="video-btn btn popup-video"><i className="glyphicon glyphicon-play"></i>Watch Video</Link>
+                                                <h1><span className="font-2" style={{color: "red"}}>WE BOOST YOUR BUSINESS </span><br/>WITH A BURST OF CREATIVITY</h1>
+                                                <h4>LET’S KNOW THE SECRET!</h4> <Link onClick={this.callModal} to="#" className="video-btn btn popup-video"><i className="glyphicon glyphicon-play"></i>Watch Video</Link>
+                                                {/* <Link to="" className="btn btn-custom">Learn more</Link> */}
                                             </Col>
                                         </Row>
                                     </div>

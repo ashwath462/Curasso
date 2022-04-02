@@ -7,13 +7,18 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 //Import Images
-import img1 from "../../assets/images/clients/1.png";
-import img2 from "../../assets/images/clients/2.png";
-import img3 from "../../assets/images/clients/3.png";
-import img4 from "../../assets/images/clients/4.png";
-import img5 from "../../assets/images/clients/5.png";
-import img6 from "../../assets/images/clients/6.png";
-import img7 from "../../assets/images/clients/7.png";
+import img1 from "../../assets/images/clients/dc.png";
+import img2 from "../../assets/images/clients/foe.png";
+import img3 from "../../assets/images/clients/hubilo.png";
+import img4 from "../../assets/images/clients/afo.png";
+import img5 from "../../assets/images/clients/criada.png";
+import img6 from "../../assets/images/clients/emerging.png";
+import img7 from "../../assets/images/clients/jharkhand.png";
+import img8 from "../../assets/images/clients/isha.png";
+import img9 from "../../assets/images/clients/poshaq.png";
+import img10 from "../../assets/images/clients/srs.png";
+import img11 from "../../assets/images/clients/walkinedu.png";
+import img12 from "../../assets/images/clients/dasmesh.png";
 import user from "../../assets/images/user-1.jpg";
 
 class Clients extends Component {
@@ -26,13 +31,11 @@ class Clients extends Component {
             { id : 5, img : img5 },
             { id : 6, img : img6 },
             { id : 7, img : img7 },
-            { id : 1, img : img1 },
-            { id : 2, img : img2 },
-            { id : 3, img : img3 },
-            { id : 4, img : img4 },
-            { id : 5, img : img5 },
-            { id : 6, img : img6 },
-            { id : 7, img : img7 },
+            { id : 8, img : img8 },
+            { id : 9, img : img9 },
+            { id : 10, img : img10 },
+            { id : 11, img : img11 },
+            { id : 12, img : img12 }
         ],
         responsive:{
             0:{
@@ -81,15 +84,15 @@ class Clients extends Component {
                                         id="clients-slider"
                                         items={6}
                                         loop={false}
-                                        margin={10}
+                                        margin={4}
                                         nav={false}
                                         dots={false}
                                         responsive = {this.state.responsive}
                                     >
                                         {
                                             this.state.clients.map((client, key) =>
-                                                <div className="item" key={key} style={{width : 185}}>
-                                                    <div className="">
+                                                <div className="item" key={key} style={{width : 105}}>
+                                                    <div className="imgin">
                                                         <img src={client.img} alt="logo-img"/>
                                                     </div>
                                                 </div>
