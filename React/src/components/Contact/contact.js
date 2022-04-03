@@ -4,12 +4,15 @@ import { AvForm, AvField } from "availity-reactstrap-validation";
 import { Animated } from "react-animated-css";
 import axios from 'axios';
 
-const URL = "http://localhost:9000/";
+
+
+const URL = "http://localhost:9000/pp";
+
 class GetInTouch extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstname: "",
+      name: "",
       email: "",
       subject: "",
       comments: "",
@@ -22,11 +25,12 @@ register = (e)=>{
     let emailPattern = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
     let emailPattern2 = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+\.[A-Za-z]+$/);
     let emailPattern3 = new RegExp(/^[a-zA-Z0-9]+\.+[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]/);
-    if(this.state.firstname && this.state.email && this.state.subject && this.state.comments && (emailPattern.test(this.state.email) || emailPattern2.test(this.state.email)|| emailPattern3.test(this.state.email))){
-      const user = {name: this.state.firstname, email: this.state.email, subject: this.state.subject, comments: this.state.comments}
-      alert("Message pushed")
-      axios.post(`${URL}signup`, user)
+    if(this.state.name && this.state.email && this.state.subject && this.state.comments && (emailPattern.test(this.state.email) || emailPattern2.test(this.state.email)|| emailPattern3.test(this.state.email))){
+      // alert("Message pushed")
+      console.log(this.state);
+      axios.post(URL, this.state)
       .then(res => {
+        alert("hi");
         console.log(res);   
       })
     }
@@ -36,7 +40,7 @@ register = (e)=>{
     let emailPattern = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
 
     if (
-      this.state.firstname !== "" &&
+      this.state.name !== "" &&
       this.state.email !== "" &&
       emailPattern.test(this.state.email) &&
       this.state.subject !== "" &&
@@ -46,7 +50,7 @@ register = (e)=>{
       this.myFormRef.reset();
 
       setTimeout(() => {
-        this.setState({ firstname: "" });
+        this.setState({ name: "" });
         this.setState({ email: "" });
         this.setState({ subject: "" });
         this.setState({ comments: "" });
@@ -114,7 +118,7 @@ register = (e)=>{
                         <div id="success_page">
                           <h3>Email Sent Successfully.</h3>
                           <p>
-                            Thank you <strong>{this.state.firstname}</strong>,
+                            Thank you <strong>{this.state.name}</strong>,
                             your message has been submitted to us.
                           </p>
                         </div>
@@ -132,7 +136,7 @@ register = (e)=>{
                   <Row>
                     <Col sm="4">
                       <AvField
-                        name="firstname"
+                        name="name"
                         placeholder="Your name*..."
                         type="text"
                         errorMessage="Enter Your Name"
