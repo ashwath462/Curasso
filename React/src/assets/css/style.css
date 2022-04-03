@@ -105,7 +105,7 @@ h6 {
   border-top: 5px solid rgba(56, 83, 233, 0.2);
   border-right: 5px solid rgba(56, 83, 233, 0.2);
   border-bottom: 5px solid rgba(56, 83, 233, 0.2);
-  border-left: 5px solid #f56363;
+  border-left: 5px solid #ef1923;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -189,7 +189,7 @@ h6 {
 }
 
 .text-custom {
-  color: #f56363;
+  color: #ef1923;
 }
 
 .text-warning {
@@ -230,7 +230,7 @@ h6 {
 
 /* Background images css */
 .bg-home {
-  background: url("../images/img-1.jpg");
+  background: url("../images/0001.jpg");
   background-size: cover;
   background-color: #222328;
   position: relative;
@@ -289,7 +289,7 @@ h6 {
 }
 
 .btn-custom {
-  background-color: #f56363;
+  background-color: #ef1923;
 }
 
 .btn-custom:hover {
@@ -297,7 +297,7 @@ h6 {
 }
 
 .btn-link {
-  color: #f56363 !important;
+  color: #ef1923 !important;
   box-shadow: none !important;
   padding: 0;
 }
@@ -351,7 +351,7 @@ h6 {
 }
 
 .logo span {
-  color: #f56363;
+  color: #ef1923;
 }
 
 .navbar-custom .navbar-nav li a {
@@ -372,7 +372,7 @@ h6 {
 
 .navbar-custom .navbar-nav li a.active{
   color: #ffffff !important;
-  background-color: #f56363 !important;
+  background-color: #ef1923 !important;
 }
 
 .is-sticky .navbar-custom{
@@ -519,7 +519,7 @@ h6 {
   color: #fff;
   font-size: 26px;
   font-family: 'Crete Round', serif;
-  background: #f56363;
+  background: #ef1923;
   padding: 25px 40px 25px;
   margin: 0 -40px 50px;
   font-weight: 500;
@@ -607,7 +607,11 @@ h6 {
 }
 
 .services-box:hover i {
-  color: #f56363;
+  color: #ef1923;
+}
+
+.services-box:hover h4 {
+  color: #ef1923;
 }
 
 .services-box i {
@@ -638,9 +642,9 @@ h6 {
 .features-box .number{
   height: 60px;
   width: 60px;
-  background-color: #f56363;
+  background-color: #ef1923;
   color: #ffffff;
-  border: 2px solid #f56363;
+  border: 2px solid #ef1923;
   font-size: 24px;
   text-align: center;
   line-height: 56px;
@@ -756,11 +760,11 @@ h6 {
 
 .pricing-box.active {
     background-color: rgba(245, 99, 99, 0.07);
-    border-color: #f56363;
+    border-color: #ef1923;
 }
 
 .pricing-box.active .plan-title {
-  color: #f56363;
+  color: #ef1923;
 }
 
 .pricing-header .plan-title{
@@ -1026,6 +1030,7 @@ h6 {
 
   .title-box h4 {
     width: 95%;
+    color: red
   }
 
   .home-intro .intro-form {

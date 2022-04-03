@@ -43,7 +43,7 @@ class ServiceBox extends Component {
             <React.Fragment>
                 {
                     this.props.services.map((service, key) =>
-                    <Col key={key} sm="4">
+                    <Col key={key}>
                         <div className="services-box">
                         <HoverableDiv handleMouseOver={this.handleMouseOver} handleMouseOut={this.handleMouseOut} p={service.icon} t={service.title}/>
                             {this.state.isHovering && <HoverText m = {service.desc}/>}

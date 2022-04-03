@@ -1,28 +1,39 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Col } from "reactstrap";
+import CountUp, { startAnimation } from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
-import CountUp from 'react-countup';
 
-class CounterBox extends Component {
-    render() {
+function CounterBox ({counters}) {
         return (
             <React.Fragment>
                 {
-                    this.props.counters.map((counter, key) =>
+                    counters.map((counters, key) =>
                     <Col sm="4" key={key} className="facts">
-                    <i className={counter.icon}></i>
+                    <i className={counters.icon}></i> 
                     {
-                        counter.isPostfix === true ?
-                            <h1> <span className="counter"><CountUp end={counter.end} duration={6} /></span> {counter.postfix}</h1>
-                        :   <h1 className="counter"><CountUp end={counter.end} duration={6} /></h1>
+                        counters.isPostfix === true ?
+                            <h1> <span className="counter"><CountUp end={counters.end} duration={6} >{({ countUpRef, start }) => (
+                                <VisibilitySensor onChange={start}>
+                                    <span ref={countUpRef} />
+                                </VisibilitySensor>
+                            )}
+     
+                            )</CountUp></span> {counters.postfix}</h1>
+                        :   <h1 className="counter"><CountUp end={counters.end} duration={6} >{({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start}>
+                                <span ref={countUpRef} />
+                            </VisibilitySensor>
+                        )}
+ 
+                        )</CountUp></h1>
                     }
-                    <h5>{counter.title}</h5>
+                    <h5>{counters.title}</h5>
+                    
                 </Col>
                     )
                 }
             </React.Fragment>
         );
     }
-}
-
 export default CounterBox;

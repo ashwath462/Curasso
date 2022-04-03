@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 //Import Logo
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/img-1.jpg";
 
 //Import Footer link
 import FooterLinks from "./footer-links";
@@ -12,11 +12,11 @@ import LinkSection from "./link-section";
 class Footer extends Component {
     state = {
         links1 : [
-            { link : "#", title : "Web Design" },
-            { link : "#", title : "Graphic Design" },
-            { link : "#", title : "Power & Energy" },
-            { link : "#", title : "Solar Power" },
-            { link : "#", title : "Green energy" },
+            { link : "#", title : "Creative Graphics" },
+            { link : "#", title : "Creative Content" },
+            { link : "#", title : "Logo & Branding" },
+            { link : "#", title : "Social Media Management" },
+            { link : "#", title : "UI/UX Design" },
         ],
         links2 : [
             { link : "#", title : "About Us" },
@@ -41,7 +41,7 @@ class Footer extends Component {
                         <Row>
 
                             <Col md="4" sm="12">
-                                <img src={logo} alt="logo" height="24" />
+                                <img src={logo} alt="logo" height="50" />
                                 <p className="margin-t-20">Architecto beatae vitae dicta sunt explicabo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sapien et lacus tempus varius. In finibus lorem vel.</p>
 
                                 <ul className="list-inline social">

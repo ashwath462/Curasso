@@ -74,7 +74,6 @@ class Index1 extends Component {
                     <About/>
 
                     {/* Importing counter */}
-                    <Counter/>
 
                     {/* Importing features */}
                     <Features isBgWhite={true}/>
@@ -90,6 +89,7 @@ class Index1 extends Component {
 
                     {/* Importing pricing */}
                     {/* <Pricing/> */}
+                    <Counter/>
 
                     {/* Importing contact */}
                     <Contact/>

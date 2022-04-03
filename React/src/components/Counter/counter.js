@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row } from "reactstrap";
+import VisibilitySensor from 'react-visibility-sensor';
+import CountUp,{ startAnimation } from 'react-countup';
+
 
 //Import Blog Box
 import CounterBox from "./counter-box";
@@ -12,13 +15,24 @@ class Counter extends Component {
             { icon : "ti-user", end : 89, title : "No. of Clients" },
         ]
     }
+    constructor(props) {
+        super(props);
+        this.onVisibilityChange = this.onVisibilityChange.bind(this); // Bind for appropriate 'this' context
+      }
+    
+      onVisibilityChange(isVisible) {
+        if (isVisible) {
+          startAnimation(this.CountUp);
+        }
+      }
     render() {
         return (
             <React.Fragment>
                 <section className="section bg-lightgray funfacts">
                     <Container>
+                        
                         <Row className="text-center">
-                            <CounterBox counters={this.state.counters} />
+                            <CounterBox counters={this.state.counters}/>
                         </Row>
                     </Container>
                 </section>
