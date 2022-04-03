@@ -72,6 +72,7 @@ class Index1 extends Component {
 
                     {/* Importing Aboutus */}
                     <About/>
+                    <Counter/>
 
                     {/* Importing counter */}
 
@@ -89,7 +90,6 @@ class Index1 extends Component {
 
                     {/* Importing pricing */}
                     {/* <Pricing/> */}
-                    <Counter/>
 
                     {/* Importing contact */}
                     <Contact/>

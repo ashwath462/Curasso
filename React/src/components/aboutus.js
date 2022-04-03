@@ -12,7 +12,7 @@ function AboutUs() {
         <div className="section section-icons"
         >
           <Container fluid >
-            <FadeIn delay={1000} transitionDuration={1000}>
+            <FadeIn delay={2000} transitionDuration={1000}>
             <Row>
             <Col className="text-center-abt" md="4">
                 <h2 className="title revealOnScroll">Mission</h2>
@@ -29,7 +29,7 @@ function AboutUs() {
             </Col>
             </Row>
             </FadeIn>
-            <FadeIn delay={1000} transitionDuration={1000}>
+            <FadeIn delay={2000} transitionDuration={1000}>
             <Row>
             <Col className="text-center text-center-abt" md="4">
                 <h2 className="title revealOnScroll">About Us</h2>

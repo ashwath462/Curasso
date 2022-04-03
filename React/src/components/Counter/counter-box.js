@@ -13,14 +13,14 @@ function CounterBox ({counters}) {
                     <i className={counters.icon}></i> 
                     {
                         counters.isPostfix === true ?
-                            <h1> <span className="counter"><CountUp end={counters.end} duration={6} >{({ countUpRef, start }) => (
+                            <h1> <span className="counter"><CountUp end={counters.end} duration={8} >{({ countUpRef, start }) => (
                                 <VisibilitySensor onChange={start}>
                                     <span ref={countUpRef} />
                                 </VisibilitySensor>
                             )}
      
                             )</CountUp></span> {counters.postfix}</h1>
-                        :   <h1 className="counter"><CountUp end={counters.end} duration={6} >{({ countUpRef, start }) => (
+                        :   <h1 className="counter"><CountUp end={counters.end} duration={12} >{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start}>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>

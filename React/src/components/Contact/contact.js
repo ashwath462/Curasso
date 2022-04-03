@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 import { Animated } from "react-animated-css";
+import axios from 'axios';
 
+const URL = "http://localhost:9000/";
 class GetInTouch extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,21 @@ class GetInTouch extends Component {
       comments: "",
       msgSendSuccess: false,
     };
+  }
+
+register = (e)=>{
+    e.preventDefault();
+    let emailPattern = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
+    let emailPattern2 = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+\.[A-Za-z]+$/);
+    let emailPattern3 = new RegExp(/^[a-zA-Z0-9]+\.+[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]/);
+    if(this.state.firstname && this.state.email && this.state.subject && this.state.comments && (emailPattern.test(this.state.email) || emailPattern2.test(this.state.email)|| emailPattern3.test(this.state.email))){
+      const user = {name: this.state.firstname, email: this.state.email, subject: this.state.subject, comments: this.state.comments}
+      alert("Message pushed")
+      axios.post(`${URL}signup`, user)
+      .then(res => {
+        console.log(res);   
+      })
+    }
   }
 
   handleSubmit = () => {
@@ -177,6 +194,7 @@ class GetInTouch extends Component {
                         name="send"
                         className="submitBnt btn  btn-custom"
                         value="Send Message"
+                        onClick={this.register}
                       />
                     </Col>
                   </Row>
