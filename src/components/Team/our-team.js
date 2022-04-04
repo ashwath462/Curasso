@@ -86,7 +86,7 @@ class OurTeam extends Component {
         id: 6,
         name: "Ashwath Arora",
         image: team6,
-        post: "Technical Executiver",
+        post: "Technical Executive",
         // desc:
           // "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
         socials: [
