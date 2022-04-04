@@ -28,7 +28,7 @@ class Counter extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section bg-lightgray funfacts">
+                <section className="section bg-lightgray funfacts" style={{backgroundColor:"#f5f6fa"}}>
                     <Container>
                         
                         <Row className="text-center">

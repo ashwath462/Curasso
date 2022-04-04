@@ -83,7 +83,7 @@ class GetInTouch extends Component {
 
               <Col sm="4">
                 <div className="contact-footer-box text-center">
-                <a href="" target="blank"><i className="ti-map-alt"></i>
+                <a href="https://www.google.com/maps/place/IET+DAVV/@22.6811578,75.8775934,17z/data=!4m5!3m4!1s0x3962fcc03e36712d:0xb6f3c2bf734a7c!8m2!3d22.6811529!4d75.8797821" target="blank"><i className="ti-map-alt"></i>
                   <h5>Indore, India</h5></a>
                 </div>
               </Col>

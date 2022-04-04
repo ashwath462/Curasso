@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 //Import Logo
-import logo from "../../assets/images/img-1.jpg";
+import logo from "../../assets/images/logo.png";
 
 //Import Footer link
 import FooterLinks from "./footer-links";
@@ -11,14 +11,14 @@ import LinkSection from "./link-section";
 
 class Footer extends Component {
     state = {
-        links1 : [
+        links2 : [
             { link : "#", title : "Creative Graphics" },
             { link : "#", title : "Creative Content" },
             { link : "#", title : "Logo & Branding" },
             { link : "#", title : "Social Media Management" },
             { link : "#", title : "UI/UX Design" },
         ],
-        links2 : [
+        links1 : [
             { link : "#", title : "About Us" },
             { link : "#", title : "Help & Support" },
             { link : "#", title : "Privacy Policy" },
@@ -42,7 +42,7 @@ class Footer extends Component {
 
                             <Col md="4" sm="12">
                                 <img src={logo} alt="logo" height="50" />
-                                <p className="margin-t-20">Architecto beatae vitae dicta sunt explicabo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sapien et lacus tempus varius. In finibus lorem vel.</p>
+                                <p className="margin-t-20">Elegance lies within the impact, the difference between how much is said and how much is heard.</p>
 
                                 <ul className="list-inline social">
                                     {

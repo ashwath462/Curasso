@@ -11,24 +11,43 @@ export default class Services extends Component {
     state = {
         services1 : [
            { title : "Creative Content", icon : "ti-thought", desc : "Content is the King of Marketing and Creating the perfect Content Strategy for your Brand requires a team of experts who can give a professional look to your brand. We have crafted Content for over 10+ Brands with our personal touch of Creativity helping them boost their business growth." },
-           { title : "Creative Graphics", icon : "ti-pencil-alt", desc : "Great design tells a story. A good creative design helps in creating a strong impression, building a brand identity, convey key information and establish customer trust. We at Minimal Holic™ create unique and flawless designs which have helped our clients to narrate their brand stories to millions around the globe." },
+        //    { title : "Creative Graphics", icon : "ti-pencil-alt", desc : "Great design tells a story. A good creative design helps in creating a strong impression, building a brand identity, convey key information and establish customer trust. We at Minimal Holic™ create unique and flawless designs which have helped our clients to narrate their brand stories to millions around the globe." },
         //    { title : "UI/UX Design", icon : "ti-light-bulb", desc : "A mobile application is the most effective way to reach and retain a specific audience. And to make your app successful, you must provide an amazing user interface and user experience. We understand the needs of your target audience and their market preference and design the perfect app for your brand." },
-        ],   
+        ],
+
+
         services2 : [
+            { title : "Creative Graphics", icon : "ti-pencil-alt", desc : "Great design tells a story. A good creative design helps in creating a strong impression, building a brand identity, convey key information and establish customer trust. We at Minimal Holic™ create unique and flawless designs which have helped our clients to narrate their brand stories to millions around the globe." },
+         ],   
+
+
+        services3 : [
             { title : "UI/UX Design", icon : "ti-layers-alt", desc : "A mobile application is the most effective way to reach and retain a specific audience. And to make your app successful, you must provide an amazing user interface and user experience. We understand the needs of your target audience and their market preference and design the perfect app for your brand." },
-            { title : "Website Development", icon : "ti-world", desc : "Website is an essential tool for your business to establish brand credibility and build trust among your customers. We help our clients by using perfect SEO and Compelling Designs, to reach their target audience with ease." },
+            // { title : "Website Development", icon : "ti-world", desc : "Website is an essential tool for your business to establish brand credibility and build trust among your customers. We help our clients by using perfect SEO and Compelling Designs, to reach their target audience with ease." },
             // { title : "Social Media Management", icon : "ti-bar-chart-alt", desc : "Social media is the most powerful tool to grow any business digitally at a minimal cost. We launch impactful Social Media Campaigns along with strategic posting to reach the maximum number of potential customers for your business." },
             
          ],
-        services3 : [
+         services4 : [
+            { title : "Website Development", icon : "ti-world", desc : "Website is an essential tool for your business to establish brand credibility and build trust among your customers. We help our clients by using perfect SEO and Compelling Designs, to reach their target audience with ease." },
+         ],
+        services5 : [
             { title : "Logo & Branding", icon : "ti-shopping-cart", desc : "A logo is what differentiates your brand from it's competition. It makes a strong first impression and is the foundation of your brand's identity. We create premium quality logos with high recall branding colors, fonts and taglines to foster the target audience's loyalty for your brand." },
-            { title : "Video Editing", icon : "ti-video-clapper", desc : "Video content increases brand awareness and recognition, it creates customer excitement about a product or service, and allows your brand to stand out from your competitors in a unique and engaging way. We create lively and impactful videos to communicate your brand presence." },
+            // { title : "Video Editing", icon : "ti-video-clapper", desc : "Video content increases brand awareness and recognition, it creates customer excitement about a product or service, and allows your brand to stand out from your competitors in a unique and engaging way. We create lively and impactful videos to communicate your brand presence." },
             // { title : "Creative Idea", icon : "ti-notepad", desc : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet." },
         ],
-        services4 : [
-            // { title : "Creative Content", icon : "ti-ruler-pencil", desc : "Content is the King of Marketing and Creating the perfect Content Strategy for your Brand requires a team of experts who can give a professional look to your brand. We have crafted Content for over 10+ Brands with our personal touch of Creativity helping them boost their business growth." },
+        services6 : [
+            { title : "Video Editing", icon : "ti-video-clapper", desc : "Video content increases brand awareness and recognition, it creates customer excitement about a product or service, and allows your brand to stand out from your competitors in a unique and engaging way. We create lively and impactful videos to communicate your brand presence." },
+        ],
+        services7 : [
+
             // { title : "Creative Graphics", icon : "ti-video-clapper", desc : "Great design tells a story. A good creative design helps in creating a strong impression, building a brand identity, convey key information and establish customer trust. We at Minimal Holic™ create unique and flawless designs which have helped our clients to narrate their brand stories to millions around the globe." },
             { title : "Social Media Management", icon : "ti-user", desc : "Social media is the most powerful tool to grow any business digitally at a minimal cost. We launch impactful Social Media Campaigns along with strategic posting to reach the maximum number of potential customers for your business." },
+            // {  title : "Friendly Support", icon : "ti-headphone-alt", desc : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet." },
+         ],
+         services8 : [
+
+            // { title : "Creative Graphics", icon : "ti-video-clapper", desc : "Great design tells a story. A good creative design helps in creating a strong impression, building a brand identity, convey key information and establish customer trust. We at Minimal Holic™ create unique and flawless designs which have helped our clients to narrate their brand stories to millions around the globe." },
+            // { title : "Social Media Management", icon : "ti-user", desc : "Social media is the most powerful tool to grow any business digitally at a minimal cost. We launch impactful Social Media Campaigns along with strategic posting to reach the maximum number of potential customers for your business." },
             {  title : "Friendly Support", icon : "ti-headphone-alt", desc : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet." },
          ]   
     }
@@ -39,7 +58,7 @@ export default class Services extends Component {
         <Container>
             <SectionTitle title1="Best" title2="Services" />          
 
-            <Row sm={1} md={2} lg={2}>
+            <Row xs={1} sm={1} md={2} lg={2}>
                 <ServiceBox services={this.state.services1} />                
             {/* </Row>       */}
 
@@ -49,7 +68,11 @@ export default class Services extends Component {
 
             {/* <Row> */}
                 <ServiceBox services={this.state.services3} /> 
-                <ServiceBox services={this.state.services4} />                
+                <ServiceBox services={this.state.services4} />
+                <ServiceBox services={this.state.services5} />
+                <ServiceBox services={this.state.services6} /> 
+                <ServiceBox services={this.state.services7} />                  
+                <ServiceBox services={this.state.services8} /> 
             </Row>       
 
         </Container>
