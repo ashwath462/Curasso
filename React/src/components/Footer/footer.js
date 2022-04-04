@@ -26,11 +26,11 @@ class Footer extends Component {
             { link : "#", title : "FAQ" },
         ],
         socials : [
-            { class : "bg-twitter", icon : "ti-twitter-alt", link : "#" },
-            { class : "bg-dribbble", icon : "ti-dribbble", link : "#" },
-            { class : "bg-linkedin", icon : "ti-linkedin", link : "#" },
-            { class : "bg-googleplus", icon : "ti-google", link : "#" },
-            { class : "bg-facebook", icon : "ti-facebook", link : "#" },
+            { class : "bg-dribbble", icon : "ti-instagram", link : "https://www.instagram.com/minimalholic.in/" },
+            { class : "bg-linkedin", icon : "ti-linkedin", link : "https://www.linkedin.com/company/minimalholic/" },
+            { class : "bg-twitter", icon : "ti-twitter-alt", link : "https://twitter.com/minimaloholic" },
+            { class : "bg-googleplus", icon : "ti-pinterest", link : "https://www.pinterest.com/minimalholic/?invite_code=bb52c65dfb084191a53ebf008a461326&sender=641903890547385622" },
+            { class : "bg-facebook", icon : "ti-facebook", link : "https://www.behance.net/minimalholic_graphic" },
         ]
     }
     render() {
@@ -48,7 +48,7 @@ class Footer extends Component {
                                     {
                                         this.state.socials.map((social, key) =>
                                             <li key={key} className="list-inline-item">
-                                                <Link to={social.link} className={social.class + " mr-1"}><i className={social.icon}></i></Link>
+                                                <a href={social.link} target={'_blank'} className={social.class + " mr-1"}><i className={social.icon}></i></a>
                                             </li>
                                         )
                                     }

@@ -13,7 +13,7 @@ import team2 from "../../assets/images/team/ps.jfif";
 import team3 from "../../assets/images/team/akashsir.jfif";
 import team4 from "../../assets/images/team/rehan.jfif";
 import team5 from "../../assets/images/team/mohit.jfif";
-import team6 from "../../assets/images/team/ashwath.jfif";
+import team6 from "../../assets/images/team/ashwath.jpg";
 class OurTeam extends Component {
   state = {
     members: [

@@ -20,25 +20,19 @@ class GetInTouch extends Component {
     };
   }
 
-register = (e)=>{
+  handleSubmit = (e) => {
     e.preventDefault();
     let emailPattern = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
     let emailPattern2 = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+\.[A-Za-z]+$/);
     let emailPattern3 = new RegExp(/^[a-zA-Z0-9]+\.+[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]/);
     if(this.state.name && this.state.email && this.state.subject && this.state.comments && (emailPattern.test(this.state.email) || emailPattern2.test(this.state.email)|| emailPattern3.test(this.state.email))){
       // alert("Message pushed")
-      console.log(this.state);
-      axios.post(URL, this.state)
+      axios.post(URL,this.state)
       .then(res => {
-        alert("hi");
-        console.log(res);   
+        // alert("hi");
+        console.log("Done");   
       })
     }
-  }
-
-  handleSubmit = () => {
-    let emailPattern = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
-
     if (
       this.state.name !== "" &&
       this.state.email !== "" &&
@@ -198,7 +192,7 @@ register = (e)=>{
                         name="send"
                         className="submitBnt btn  btn-custom"
                         value="Send Message"
-                        onClick={this.register}
+                        onClick={(e) => this.handleSubmit(e)}
                       />
                     </Col>
                   </Row>
