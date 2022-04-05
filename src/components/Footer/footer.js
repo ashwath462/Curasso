@@ -56,11 +56,11 @@ class Footer extends Component {
                             </Col>
 
                             <Col md={{size:3, offset : 2}} sm="6">
-                                <LinkSection title="Solutions" links={this.state.links1} />
+                                <LinkSection title="Useful Links" links={this.state.links1} />
                             </Col>
 
                             <Col md="3" sm="6">
-                            <LinkSection title="Useful Links" links={this.state.links2} />
+                            <LinkSection title="Solutions" links={this.state.links2} />
                             </Col>
 
                         </Row>
