@@ -39,7 +39,7 @@ class Clients extends Component {
         ],
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
                 items:3
@@ -79,16 +79,16 @@ class Clients extends Component {
                     </Row>
                     <Row>
                         <Col sm="12">
-                        <OwlCarousel
+                                <OwlCarousel
                                         className="owl-theme client-images text-center"
                                         id="clients-slider"
-                                        items={6}
+                                        items={5}
                                         loop={false}
                                         margin={4}
-                                        nav={false}
+                                        nav={true}
                                         dots={false}
                                         responsive = {this.state.responsive}
-                                    >
+                                >
                                         {
                                             this.state.clients.map((client, key) =>
                                                 <div className="item" key={key} style={{width : 105}}>
