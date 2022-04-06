@@ -355,7 +355,7 @@ h6 {
 }
 
 .navbar-custom .navbar-nav li a {
-  color: #585858;
+  color: #272727;
   font-size: 13px;
   background-color: transparent !important;
   padding: 7px 10px;
@@ -367,7 +367,7 @@ h6 {
 }
 
 .navbar-custom .navbar-nav li a:hover,.navbar-custom .navbar-nav li a:focus,.navbar-custom .navbar-nav li a:active {
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 .navbar-custom .navbar-nav li a.active{
@@ -901,7 +901,7 @@ h6 {
 }
 
 .footer ul.footer-list li a:hover  {
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 .footer .social {
