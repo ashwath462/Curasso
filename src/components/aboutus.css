@@ -29,10 +29,10 @@
     background-color: rgb(255, 255, 255);
     top: 0px;
     right: 0px;
-    border-bottom: 20px solid darken(#ef1923);
-    border-left: 20px solid darken(#ef1923);
-    border-right: 20px solid #ef1923;
-    border-top: 20px solid #ef1923;
+    border-bottom: 10px solid #ef1923;
+    border-left: 10px solid #ef1923;
+    border-right: 10px solid #ef1923;
+    border-top: 10px solid #ef1923;
     position: absolute;
     filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
 }
@@ -41,10 +41,10 @@
     display: block;
     width: 0px;
     height: 0px;
-    border-top: 40px solid darken (#ef1923);
-    border-right: 40px solid darken(#ef1923);
-    border-left: 40px solid #ef1923;
-    border-bottom: 40px solid #ef1923;
+    border-top: 20px solid #ef1923;
+    border-right: 20px solid #ef1923;
+    border-left: 20px solid #ef1923;
+    border-bottom: 20px solid #ef1923;
     bottom: 0px;
     left: 0px;
     position: absolute;
