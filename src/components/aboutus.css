@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Marvel:400,700');
 .text-center-abt{
     text-align: center;
 }
@@ -13,45 +14,45 @@
 }
 
 .card{
-  display: inline-block;
-  /* width: 45%; */
-  padding: 2rem 1rem 3rem 1rem;
-  background-color: snow;
-  position: relative;
-  /* border: none; */
+    display: inline-block;
+    /* width: 45%; */
+    padding: 2rem 1rem 3rem 1rem;
+    background-color: snow;
+    position: relative;
+    /* border: none; */
 }
 .card:after{
-content: "";
-display: block;
-width: 0px;
-height: 0px;
-background-color: rgb(255, 255, 255);
-top: 0px;
-right: 0px;
-border-bottom: 20px solid darken(#ef1923);
-border-left: 20px solid darken(#ef1923);
-border-right: 20px solid #ef1923;
-border-top: 20px solid #ef1923;
-position: absolute;
-filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+    right: 0px;
+    border-bottom: 20px solid darken(#ef1923);
+    border-left: 20px solid darken(#ef1923);
+    border-right: 20px solid #ef1923;
+    border-top: 20px solid #ef1923;
+    position: absolute;
+    filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
 }
 .card:before{
-content: "";
-display: block;
-width: 0px;
-height: 0px;
-border-top: 40px solid darken (#ef1923);
-border-right: 40px solid darken(#ef1923);
-border-left: 40px solid #ef1923;
-border-bottom: 40px solid #ef1923;
-bottom: 0px;
-left: 0px;
-position: absolute;
-filter: drop-shadow(7px -7px 5px rgba(0,0,0,0.5));
-margin-right: 10%;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid darken (#ef1923);
+    border-right: 40px solid darken(#ef1923);
+    border-left: 40px solid #ef1923;
+    border-bottom: 40px solid #ef1923;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    filter: drop-shadow(7px -7px 5px rgba(0,0,0,0.5));
+    margin-right: 10%;
 }
 .card:nth-of-type(1){
-/* margin-right: 9%;   */
+    margin-right: 9%;  
 }
 
 .card>h2{
