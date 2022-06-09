@@ -34,7 +34,7 @@ class OurTeam extends Component {
         id: 2,
         name: "Pranjal Sahu",
         image: team2,
-        post: "Co-Founder",
+        post: "Co-founder",
         // desc:
           // "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
         socials: [
@@ -53,7 +53,7 @@ class OurTeam extends Component {
         socials: [
           { class: "bg-googleplus", icon: "ti-email", link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akashchakrawarti2000@gmail.com" },
           { class: "bg-dribbble", icon: "ti-instagram", link: "https://www.instagram.com/ashhuu._/" },
-          { class: "bg-linkedin", icon: "ti-linkedin", link: "#" },
+          { class: "bg-linkedin", icon: "ti-linkedin", link: "https://www.linkedin.com/in/akash-chakrawarti/" },
         ],
       },
       {
@@ -102,7 +102,7 @@ class OurTeam extends Component {
       <React.Fragment>
         <section className="section bg-lightgray" id="team">
           <Container>
-            <SectionTitle title1="Our Creative" title2="Team" />
+            <SectionTitle title3="Our" title1="Creative" title2="Team" />
 
             <Row>
               <TeamBox members={this.state.members} />

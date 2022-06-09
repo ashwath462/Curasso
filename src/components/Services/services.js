@@ -56,23 +56,21 @@ export default class Services extends Component {
             <React.Fragment>
     <section className={this.props.isBgWhite === true ? "section" : "section bg-lightgray"} id="services">
         <Container>
-            <SectionTitle title1="Best" title2="Services" />          
+            <SectionTitle title3="Our" title1="Best" title2="Services"/>          
 
             <Row xs={1} sm={1} md={2} lg={2}>
                 <ServiceBox services={this.state.services1} />                
-            {/* </Row>       */}
-
+            {/* </Row>*/}
             {/* <Row> */}
                 <ServiceBox services={this.state.services2} />                
             {/* </Row>  */}
-
             {/* <Row> */}
                 <ServiceBox services={this.state.services3} /> 
                 <ServiceBox services={this.state.services4} />
                 <ServiceBox services={this.state.services5} />
                 <ServiceBox services={this.state.services6} /> 
                 <ServiceBox services={this.state.services7} />                  
-                <ServiceBox services={this.state.services8} /> 
+                {/* <ServiceBox services={this.state.services8} />  */}
             </Row>       
 
         </Container>

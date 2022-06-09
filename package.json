@@ -9,7 +9,8 @@
     "availity-reactstrap-validation": "^2.6.1",
     "axios": "^0.26.1",
     "bootstrap": "^4.5.0",
-    "node-sass": "^4.13.1",
+    "call-bind": "^1.0.2",
+    "node-sass": "^4.14.1",
     "react": "^16.8.0",
     "react-animated-css": "^1.2.1",
     "react-animations": "^1.0.0",
@@ -48,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0"
   }
 }

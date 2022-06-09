@@ -8,7 +8,7 @@ class SectionTitle extends Component {
             <Row>
                 <Col sm="12">
                     <div className="title-box text-center">
-                        <h2>{this.props.title1} <span className="font-2">{this.props.title2}</span></h2>
+                        <h2> <span className="font-2">{this.props.title3}</span> {this.props.title1} <span className="font-2">{this.props.title2}</span></h2>
                     </div>
                 </Col>
             </Row>

@@ -27,7 +27,7 @@ function AboutUs() {
             <div className="card">
                 <h2 className="title revealOnScroll">Vision</h2>
                 <p>         
-                Delivering result-oriented branding and marketing programs as well as public relations campaigns that enhance our clients’ awareness, improve their sales and foster their growth.
+                Delivering result-oriented branding and marketing programs as well as public relations campaigns that enhance our clients’ awareness, improve their overall sales and foster their growth.
                 </p>
               </div>
             </Col>
